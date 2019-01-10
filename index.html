@@ -3,29 +3,30 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A layout example with a side menu that hides on mobile, just like the Pure website.">
+    <meta name="description"
+          content="A layout example with a side menu that hides on mobile, just like the Pure website.">
     <title>Responsive Side Menu &ndash; Layout Examples &ndash; Pure</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
 
-    
-    
-        <!--[if lte IE 8]>
-            <link rel="stylesheet" href="css/layouts/side-menu-old-ie.css">
-        <![endif]-->
-        <!--[if gt IE 8]><!-->
-            <link rel="stylesheet" href="css/layouts/side-menu.css">
-        <!--<![endif]-->
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="css/layouts/side-menu-old-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="css/layouts/side-menu.css">
+    <!--<![endif]-->
 </head>
 <body>
-
-
-
-
 
 
 <div id="layout">
@@ -61,87 +62,176 @@
         <div class="content">
             <h2 class="content-subhead">How to use this layout</h2>
             <p>
-                To use this layout, you can just copy paste the HTML, along with the CSS in <a href="/css/layouts/side-menu.css" alt="Side Menu CSS">side-menu.css</a>, and the JavaScript in <a href="/js/ui.js">ui.js</a>. The JS file uses vanilla JavaScript to simply toggle an <code>active</code> class that makes the menu responsive.
+                To use this layout, you can just copy paste the HTML, along with the CSS in <a
+                    href="/css/layouts/side-menu.css" alt="Side Menu CSS">side-menu.css</a>, and the JavaScript in <a
+                    href="/js/ui.js">ui.js</a>. The JS file uses vanilla JavaScript to simply toggle an
+                <code>active</code> class that makes the menu responsive.
             </p>
 
             <h2 class="content-subhead">Now Let's Speak Some Latin</h2>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
             </p>
 
             <div class="pure-g">
                 <div class="pure-u-1-4">
-                    <img class="pure-img-responsive" src="http://farm3.staticflickr.com/2875/9069037713_1752f5daeb.jpg" alt="Peyto Lake">
+                    <!--<img class="pure-img-responsive" src="http://farm3.staticflickr.com/2875/9069037713_1752f5daeb.jpg"-->
+                         alt="Peyto Lake">
                 </div>
                 <div class="pure-u-1-4">
-                    <img class="pure-img-responsive" src="http://farm3.staticflickr.com/2813/9069585985_80da8db54f.jpg" alt="Train">
+                    <!--<img class="pure-img-responsive" src="http://farm3.staticflickr.com/2813/9069585985_80da8db54f.jpg"-->
+                         alt="Train">
                 </div>
                 <div class="pure-u-1-4">
-                    <img class="pure-img-responsive" src="http://farm6.staticflickr.com/5456/9121446012_c1640e42d0.jpg" alt="T-Shirt Store">
+                    <!--<img class="pure-img-responsive" src="http://farm6.staticflickr.com/5456/9121446012_c1640e42d0.jpg"-->
+                         alt="T-Shirt Store">
                 </div>
                 <div class="pure-u-1-4">
-                    <img class="pure-img-responsive" src="http://farm8.staticflickr.com/7357/9086701425_fda3024927.jpg" alt="Mountain">
+                    <!--<img class="pure-img-responsive" src="http://farm8.staticflickr.com/7357/9086701425_fda3024927.jpg"-->
+                         alt="Mountain">
                 </div>
             </div>
 
             <h2 class="content-subhead">Try Resizing your Browser</h2>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
             </p>
         </div>
     </div>
     <div id="ConfDaoLiang" style="display: none">
-        <button class="pure-button" id="addConfDaoLiangButton" style="margin: 5px">添加</button>
+        <input id="addConfDaoLiangButton" class="pure-button" type="button" style="margin: 5px 5px 5px 50px" value="添加"
+               data-toggle="modal"
+               data-target="#addDaoLiangConfig"/>
         <fieldset>
-        <legend>配置信息</legend>
-        <table class="pure-table">
-            <thead>
-            <tr>
-                <th>编号</th>
-                <th>游戏名称</th>
-                <th>类型</th>
-                <th>微信APPID</th>
-                <th>游戏id</th>
-                <th>icon路径</th>
-                <th>图片路径</th>
-                <th>描述</th>
-                <th>转跳参数</th>
-                <th>link_text</th>
-                <th>人数</th>
-                <th>权重</th>
-                <th>操作</th>
-            </tr>
-            </thead>
+            <legend>配置信息</legend>
+            <table class="pure-table">
+                <thead>
+                <tr>
+                    <th>编号</th>
+                    <th>游戏名称</th>
+                    <th>类型</th>
+                    <th>微信APPID</th>
+                    <th>游戏id</th>
+                    <th>icon路径</th>
+                    <th>图片路径</th>
+                    <th>描述</th>
+                    <th>转跳参数</th>
+                    <th>link_text</th>
+                    <th>人数</th>
+                    <th>权重</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
 
-            <tbody>
-            <tr class="pure-table">
-                <th>1</th>
-                <th>球球去吧</th>
-                <th>1</th>
-                <th>wxc83a902020719aac</th>
-                <th>10001</th>
-                <th>qiuqiuquba.png</th>
-                <th></th>
-                <th></th>
-                <th>channelCode=lhlsxyx-xdlxs-01-qqqb&newgoto=wx6092d7f44e8b8abb</th>
-                <th></th>
-                <th>1113</th>
-                <th>0</th>
-                <th style="display: block;">
-                    <button class="pure-button" style="margin: 1px">修改</button>
-                    <button class="pure-button" style="margin: 1px">删除</button>
-                </th>
-            </tr>
-            </tbody>
-        </table>
+                <tbody>
+                <tr class="pure-table">
+                    <th>1</th>
+                    <th>球球去吧</th>
+                    <th>1</th>
+                    <th>wxc83a902020719aac</th>
+                    <th>10001</th>
+                    <th>qiuqiuquba.png</th>
+                    <th></th>
+                    <th></th>
+                    <th>channelCode=lhlsxyx-xdlxs-01-qqqb&newgoto=wx6092d7f44e8b8abb</th>
+                    <th></th>
+                    <th>1113</th>
+                    <th>0</th>
+                    <th style="display: block;">
+                        <button class="pure-button" style="margin: 1px">修改</button>
+                        <button class="pure-button" style="margin: 1px">删除</button>
+                    </th>
+                </tr>
+                </tbody>
+            </table>
         </fieldset>
+
+
+        <div id="addDaoLiangConfig" class=" modal hide fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">添加配置</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="pure-form pure-form-aligned">
+                            <fieldset>
+                                <div class="pure-control-group">
+                                    <label for="AddConfigName">游戏名称</label>
+                                    <input id="AddConfigName" type="text" placeholder="如：心动练习生">
+                                    <span class="glyphicon glyphicon-question-sign" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Tooltip on top"></span>
+                                    <!--<span class="pure-form-message-inline">This is a required field.</span>-->
+                                </div>
+
+                                <div class="pure-control-group" >
+                                    <label for="AddConfigAPPID" >微信APPID</label>
+                                    <input id="AddConfigAPPID" type="text" placeholder="wxxxxxxxxxxxxx">
+                                </div>
+
+                                <div class="pure-control-group">
+                                    <label for="AddConfigMggfGameID">游戏id</label>
+                                    <input id="AddConfigMggfGameID" type="text" placeholder="游戏id">
+                                </div>
+
+                                <div class="pure-control-group">
+                                    <label for="AddConfigIconPath">icon路径</label>
+                                    <input id="AddConfigIconPath" type="text" placeholder="icon路径">
+                                </div>
+
+                                <div class="pure-control-group">
+                                    <label for="AddConfigPicPath">图片路径</label>
+                                    <input id="AddConfigPicPath" type="text" placeholder="图片路径">
+                                </div>
+                                <div class="pure-control-group">
+                                    <label for="AddConfigDescription">描述</label>
+                                    <input id="AddConfigDescription" type="text" placeholder="描述">
+                                </div>
+                                <div class="pure-control-group">
+                                    <label for="AddConfigNavigatorParams">转跳参数</label>
+                                    <input id="AddConfigNavigatorParams" type="text" placeholder="转跳参数">
+                                </div>
+                                <div class="pure-control-group">
+                                    <label for="AddConfigLinkText">linkText</label>
+                                    <input id="AddConfigLinkText" type="text" placeholder="linkText">
+                                </div>
+                                <div class="pure-control-group">
+                                    <label for="AddConfigPlayerNumber">人数</label>
+                                    <input id="AddConfigPlayerNumber" type="text" placeholder="人数">
+                                </div>
+                                <div class="pure-control-group">
+                                    <label for="AddConfigQuanZhong">权重</label>
+                                    <input id="AddConfigQuanZhong" type="text" placeholder="权重">
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">确定</button>
+                        <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
 </div>
 
 
-
-
 <script src="js/ui.js"></script>
-
+<script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 </html>

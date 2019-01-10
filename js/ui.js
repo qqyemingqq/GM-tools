@@ -7,6 +7,7 @@
         mainButton = document.getElementById('mainButton'),
         ConfDaoLiangView = document.getElementById('ConfDaoLiang'),
 
+
         ConfDaoLiangButton = document.getElementById('ConfDaoLiangButton'),
         ConfHaiBaoButton = document.getElementById('ConfHaiBaoButton'),
         addConfDaoLiangButton = document.getElementById('addConfDaoLiangButton')
@@ -14,7 +15,6 @@
     ;
 
     let views = [content, ConfDaoLiangView];
-
 
     addConfDaoLiangButton.addEventListener('pointerup', () => {
         console.log("addConfDaoLiangButton");
