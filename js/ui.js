@@ -5,7 +5,7 @@
         menuLink = document.getElementById('menuLink'),
         content = document.getElementById('main'),
         mainButton = document.getElementById('mainButton'),
-        ConfDaoLiangView = document.getElementById('ConfDaoLiang'),
+        ConfDaoLiang = document.getElementById('ConfDaoLiang'),
 
 
         ConfDaoLiangButton = document.getElementById('ConfDaoLiangButton'),
@@ -14,7 +14,7 @@
 
     ;
 
-    let views = [content, ConfDaoLiangView];
+    let views = [content, ConfDaoLiang];
 
     addConfDaoLiangButton.addEventListener('pointerup', () => {
         console.log("addConfDaoLiangButton");
@@ -23,7 +23,10 @@
 
     ConfDaoLiangButton.addEventListener('pointerup', () => {
         console.log("ConfDaoLiangButton");
-        switchViw(ConfDaoLiangView);
+        Model.getDataFromMGGF(recommendData,{game_id:54,token:'xx'},(e)=>{
+            ConfDaoLiangView.appendEle(e);
+        });
+        switchViw(ConfDaoLiang);
     });
 
     mainButton.addEventListener('pointerup', () => {
@@ -38,7 +41,7 @@
 
     function toggleClass(element, className) {
         console.log(element, className);
-        var classes = element.className.split(/\s+/),
+        let classes = element.className.split(/\s+/),
             length = classes.length,
             i = 0;
 
@@ -58,7 +61,7 @@
     }
 
     function toggleAll(e) {
-        var active = 'active';
+        let active = 'active';
 
         e.preventDefault();
         toggleClass(layout, active);

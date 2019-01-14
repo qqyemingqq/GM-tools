@@ -112,115 +112,94 @@
                data-target="#addDaoLiangConfig"/>
         <fieldset>
             <legend>配置信息</legend>
-            <table class="pure-table">
+            <table class="pure-table pure-table-bordered" style="table-layout: fixed;word-break: break-all; word-wrap: break-word;">
                 <thead>
                 <tr>
-                    <th>编号</th>
-                    <th>游戏名称</th>
-                    <th>类型</th>
-                    <th>微信APPID</th>
-                    <th>游戏id</th>
-                    <th>icon路径</th>
-                    <th>图片路径</th>
-                    <th>描述</th>
-                    <th>转跳参数</th>
-                    <th>link_text</th>
-                    <th>人数</th>
-                    <th>权重</th>
-                    <th>操作</th>
+                    <th style="width: 70px;">编号</th>
+                    <th style="width: 120px;">游戏名称</th>
+                    <th style="width: 70px;">类型</th>
+                    <th style="width: 140px;">微信APPID</th>
+                    <th style="width: 100px;">游戏id</th>
+                    <th style="width: 100px;">icon路径</th>
+                    <th style="width: 80px;">图片路径</th>
+                    <th style="width: 100px;">描述</th>
+                    <th style="width: 100px;">转跳参数</th>
+                    <th style="width: 65px;">人数</th>
+                    <th style="width: 65px;">权重</th>
+                    <th style="width: 100px;">操作</th>
                 </tr>
                 </thead>
 
-                <tbody>
-                <tr class="pure-table">
-                    <th>1</th>
-                    <th>球球去吧</th>
-                    <th>1</th>
-                    <th>wxc83a902020719aac</th>
-                    <th>10001</th>
-                    <th>qiuqiuquba.png</th>
-                    <th></th>
-                    <th></th>
-                    <th>channelCode=lhlsxyx-xdlxs-01-qqqb&newgoto=wx6092d7f44e8b8abb</th>
-                    <th></th>
-                    <th>1113</th>
-                    <th>0</th>
-                    <th style="display: block;">
-                        <button class="pure-button" style="margin: 1px">修改</button>
-                        <button class="pure-button" style="margin: 1px">删除</button>
-                    </th>
-                </tr>
+                <tbody id="ConfDaoLiangBody">
                 </tbody>
             </table>
         </fieldset>
+    </div>
+    <div id="addDaoLiangConfig" class=" modal hide fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">添加配置</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form class="pure-form pure-form-aligned">
+                        <fieldset>
+                            <div class="pure-control-group">
+                                <label for="AddConfigName">游戏名称</label>
+                                <input id="AddConfigName" type="text" placeholder="如：心动练习生">
+                                <span class="glyphicon glyphicon-question-sign" aria-hidden="true" ></span>
+                                <!--<span class="pure-form-message-inline">This is a required field.</span>-->
+                            </div>
 
+                            <div class="pure-control-group" >
+                                <label for="AddConfigAPPID" >微信APPID</label>
+                                <input id="AddConfigAPPID" type="text" placeholder="wxxxxxxxxxxxxx">
+                            </div>
 
-        <div id="addDaoLiangConfig" class=" modal hide fade" tabindex="-1" role="dialog">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">添加配置</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <form class="pure-form pure-form-aligned">
-                            <fieldset>
-                                <div class="pure-control-group">
-                                    <label for="AddConfigName">游戏名称</label>
-                                    <input id="AddConfigName" type="text" placeholder="如：心动练习生">
-                                    <span class="glyphicon glyphicon-question-sign" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Tooltip on top"></span>
-                                    <!--<span class="pure-form-message-inline">This is a required field.</span>-->
-                                </div>
+                            <div class="pure-control-group">
+                                <label for="AddConfigMggfGameID">游戏id</label>
+                                <input id="AddConfigMggfGameID" type="text" placeholder="游戏id">
+                            </div>
 
-                                <div class="pure-control-group" >
-                                    <label for="AddConfigAPPID" >微信APPID</label>
-                                    <input id="AddConfigAPPID" type="text" placeholder="wxxxxxxxxxxxxx">
-                                </div>
+                            <div class="pure-control-group">
+                                <label for="AddConfigIconPath">icon路径</label>
+                                <input id="AddConfigIconPath" type="text" placeholder="icon路径">
+                            </div>
 
-                                <div class="pure-control-group">
-                                    <label for="AddConfigMggfGameID">游戏id</label>
-                                    <input id="AddConfigMggfGameID" type="text" placeholder="游戏id">
-                                </div>
-
-                                <div class="pure-control-group">
-                                    <label for="AddConfigIconPath">icon路径</label>
-                                    <input id="AddConfigIconPath" type="text" placeholder="icon路径">
-                                </div>
-
-                                <div class="pure-control-group">
-                                    <label for="AddConfigPicPath">图片路径</label>
-                                    <input id="AddConfigPicPath" type="text" placeholder="图片路径">
-                                </div>
-                                <div class="pure-control-group">
-                                    <label for="AddConfigDescription">描述</label>
-                                    <input id="AddConfigDescription" type="text" placeholder="描述">
-                                </div>
-                                <div class="pure-control-group">
-                                    <label for="AddConfigNavigatorParams">转跳参数</label>
-                                    <input id="AddConfigNavigatorParams" type="text" placeholder="转跳参数">
-                                </div>
-                                <div class="pure-control-group">
-                                    <label for="AddConfigLinkText">linkText</label>
-                                    <input id="AddConfigLinkText" type="text" placeholder="linkText">
-                                </div>
-                                <div class="pure-control-group">
-                                    <label for="AddConfigPlayerNumber">人数</label>
-                                    <input id="AddConfigPlayerNumber" type="text" placeholder="人数">
-                                </div>
-                                <div class="pure-control-group">
-                                    <label for="AddConfigQuanZhong">权重</label>
-                                    <input id="AddConfigQuanZhong" type="text" placeholder="权重">
-                                </div>
-                            </fieldset>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="submit" class="btn btn-primary">确定</button>
-                        <!--<button type="button" class="btn btn-primary">Save changes</button>-->
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
+                            <div class="pure-control-group">
+                                <label for="AddConfigPicPath">图片路径</label>
+                                <input id="AddConfigPicPath" type="text" placeholder="图片路径">
+                            </div>
+                            <div class="pure-control-group">
+                                <label for="AddConfigDescription">描述</label>
+                                <input id="AddConfigDescription" type="text" placeholder="描述">
+                            </div>
+                            <div class="pure-control-group">
+                                <label for="AddConfigNavigatorParams">转跳参数</label>
+                                <input id="AddConfigNavigatorParams" type="text" placeholder="转跳参数">
+                            </div>
+                            <div class="pure-control-group">
+                                <label for="AddConfigLinkText">linkText</label>
+                                <input id="AddConfigLinkText" type="text" placeholder="linkText">
+                            </div>
+                            <div class="pure-control-group">
+                                <label for="AddConfigPlayerNumber">人数</label>
+                                <input id="AddConfigPlayerNumber" type="text" placeholder="人数">
+                            </div>
+                            <div class="pure-control-group">
+                                <label for="AddConfigQuanZhong">权重</label>
+                                <input id="AddConfigQuanZhong" type="text" placeholder="权重">
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">确定</button>
+                    <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
@@ -229,7 +208,9 @@
 </div>
 
 
+<script src="js/ConfDaoLiangView.js"></script>
 <script src="js/ui.js"></script>
+<script src="js/model.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
